@@ -309,7 +309,7 @@ export class BlockchainExplorerRpc2 implements BlockchainExplorer {
     }
 
     // getDaemonUrl(){
-    // 	return this.testnet ? 'http://localhost:48081/' : 'http://localhost:38081/';
+    // 	return this.testnet ? 'http://localhost:11898/' : 'http://localhost:11898/';
     // }
 
     scannedHeight: number = 0;
