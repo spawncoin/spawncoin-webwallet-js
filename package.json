@@ -1,22 +1,21 @@
 {
-  "name": "SpawnCoinWebWallet",
+  "name": "spawnwebwallet",
   "version": "1.0.0",
-  "description": "Fully client side web wallet for SpawnCoin",
+  "description": "Fully client side web wallet for Spawn",
   "main": "index.js",
   "dependencies": {
-    "localforage": "^1.7.2",
     "typescript": "^2.9.2",
-    "workbox-build": "^3.4.1"
+    "workbox-build": "^3.3.0"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spawncoin/spawncoin-webwallet-js.git"
+    "url": "git+https://github.com/spawncoin/spawn-webwallet-js.git"
   },
-  "author": "gnock & TurtleCoin",
+  "author": "Gnock",
   "license": "BSD-3",
   "bugs": {
-    "url": "https://github.com/spawncoin/spawncoin-webwallet-jsissues"
+    "url": "https://github.com/gnock/masari-webwallet/issues"
   },
-  "homepage": "https://github.com/spawncoin/spawncoin-webwallet-js#readme"
+  "homepage": "https://github.com/spawncoin/spawn-webwallet-js.git#readme"
 }

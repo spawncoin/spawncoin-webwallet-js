@@ -1,0 +1,23 @@
+<div id="app" class="body-root" v-cloak="">
+	<div class="body-header" >
+		<div class="header-title">
+			<i class="fa fa-pie-chart" aria-hidden="true"></i> {{ $t("networkPage.title") }}
+		</div>
+		<div class="header-subtitle" >
+			{{ $t("networkPage.subtitle") }}
+		</div>
+	</div>
+	<div class="body-content" >
+		<div class="panel">
+			<div class="body" >
+				<div class="content" >
+					<p>{{ $t("networkPage.statsBlock.hashrate") }}: {{networkHashrate}} MH/s</p>
+					<p>{{ $t("networkPage.statsBlock.height") }}: {{blockchainHeight}}</p>
+					<p>{{ $t("networkPage.statsBlock.difficulty") }}: {{networkDifficulty}}</p>
+					<p>{{ $t("networkPage.statsBlock.lastTimeBlock") }}: {{ $d(new Date(lastBlockFound*1000), 'long')}}</p>
+					<p>{{ $t("networkPage.statsBlock.lastReward") }}: {{lastReward}} SPWN</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

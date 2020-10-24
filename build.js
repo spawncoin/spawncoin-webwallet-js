@@ -1,7 +1,6 @@
 /*
  * Copyright (c) 2018, Gnock
  * Copyright (c) 2018, The Masari Project
- * Copyright (c) 2018, The TurtleCoin Project
  *
  * Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
  *
@@ -20,14 +19,14 @@ const workboxBuild = require('workbox-build');
 const buildSW = () => {
 	// This will return a Promise
 	return workboxBuild.injectManifest({
-		swSrc: 'wwwroot/service-worker-raw.js',
-		swDest: 'wwwroot/service-worker.js',
-		globDirectory: 'wwwroot',
+		swSrc: 'src/service-worker-raw.js',
+		swDest: 'src/service-worker.js',
+		globDirectory: 'src',
 		globPatterns: [
 			'**\/*.{js,css,html,json,png,ico,jpg}',
 		],
 		globIgnores:[
-			'd/Vue.js'
+			'd/Vue.js', 'src/service-worker-raw.js'
 		]
 	});
 };
